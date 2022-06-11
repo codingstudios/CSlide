@@ -1,0 +1,33 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: #1c1c1c;
+    color: white;
+}
+
+.container {
+    display: flex;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    scroll-snap-type: x mandatory;
+}
+  
+.container > div {
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    scroll-snap-align: center;
+    flex: none;
+    width: 100%;
+    font-family: arial, helvetica, san-serif;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+p, li {
+    font-size: 30px;
+}
