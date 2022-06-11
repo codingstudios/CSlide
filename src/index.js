@@ -34,7 +34,7 @@ slides.forEach((page) => {
         html += `${div}`;
 })
     
-const finalHTML = `<link rel="stylesheet" href="test.css"><body><div class="container">${html}</div></body>`;
+const finalHTML = `<link rel="stylesheet" href="style.css"><body><div class="container">${html}</div></body>`;
     
 fs.writeFileSync(`./slide.html`, finalHTML); 
 console.log(`CSlide: [Merged] (${slideFile}) => ./slide.html`)
