@@ -23,20 +23,13 @@ slide.addEventListener('scroll', () => {
 
 
 slide.onclick = (e) => {
-  var center = (slide.scrollLeft + 1440) / 2;
-  console.log(center, slide.scrollLeft)
+  var center = ((slide.scrollLeft * 2) + 1440) / 2;
   if(e.layerX <= center) {
-    console.log('left', e.layerX)
+    if(scrollAmount == 0)return;
+    slide.scrollTo({ left: scrollAmount -= 1440, behavior: 'smooth' });
   }else {
-    console.log('right', e.layerX)
+    scrollAmount += 1440;
+    if((scrollAmount / 1440) == pages) scrollAmount = 0;
+    slide.scrollTo({ left: scrollAmount, behavior: 'smooth' });
   }
-  scrollAmount += 1440;
-  if((scrollAmount / 1440) == pages) scrollAmount = 0;
-  //slide.scrollTo({ left: scrollAmount, behavior: 'smooth' });
 };
-
-// document.addEventListener("onclick").onclick = () => {
-//   //console.log('left')
-//   if(scrollAmount == 0)return;
-//   slide.scrollTo({ left: scrollAmount -= 1440, behavior: 'smooth' });
-// }
