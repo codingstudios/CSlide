@@ -17,6 +17,7 @@ body {
   
 .container > div {
     margin: auto;
+    line-height: 2rem !important;
     text-align: center;
     align-items: center;
     scroll-snap-align: center;
@@ -29,6 +30,21 @@ h1 {
     font-size: 4em;
 }
 
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
 p, li {
     font-size: 30px;
+    line-height: 2rem !important;
+}
+
+img {
+    max-width: 300px;
+    max-height: 200px;
+    border-radius: 20px;
 }
