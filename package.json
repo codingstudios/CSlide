@@ -1,0 +1,25 @@
+{
+  "name": "CSlide",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js slide.md index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codingstudios/CSlide.git"
+  },
+  "keywords": [],
+  "type": "module",
+  "author": "",
+  "license": "SEE .LICENSE",
+  "bugs": {
+    "url": "https://github.com/codingstudios/CSlide/issues"
+  },
+  "homepage": "https://github.com/codingstudios/CSlide#readme",
+  "dependencies": {
+    "dompurify": "^2.3.8",
+    "jsdom": "^19.0.0"
+  }
+}
